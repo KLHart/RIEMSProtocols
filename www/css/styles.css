@@ -1,0 +1,142 @@
+/*
+   statusbar-overlay sets the background color for the overlay. Black text is the default when the statusbar plugin is not added. When the
+   statusbar plugin is added, it also adds default setting to make the content white via:
+
+       <preference name="StatusBarStyle" value="lightcontent"/>
+
+   Setting the background color to black will allow the default light content (white text/icons) to show on it. The statusbar plugin is included
+   in the config.xml file and will be added by the CLI when you build locally.
+
+   See https://github.com/apache/cordova-plugin-statusbar
+*/
+
+.statusbar-overlay {
+    background: #000000;
+}
+
+.protocol-list {
+	margin-top: 4px;
+	margin-bottom: 4px;
+  font-size: 15px;
+
+}
+
+.protocol-list a{
+  display: inline;
+  background-color: #D3EBFD;
+  padding: 2px;
+  border-radius: 3px;
+  border-color: #000;
+
+}
+
+.keywords{
+  display:none;
+}
+
+.protocol-list ul li {
+  margin: 10px;
+}
+
+.protocol-table-item {
+  border: 1px solid black;
+  margin:0px;
+}
+
+table{
+  border: 1px solid black;
+}
+
+.protocol-accordian {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #FFF
+  font-size: 15px;
+}
+
+.phone-list {
+  list-style-type: none;
+}
+
+.phone-list-item {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #FFF;
+}
+
+
+.phone-list-link {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.page {
+    background-color: #FFF;
+    background-image: url("../staroflife.png")
+}
+
+
+ul {
+  opacity: 1;
+}
+
+.panel {
+  background-color: #FFF;
+}
+
+.protocol-navbar-list-item a{
+  background-color: #FFF;
+  display: inline-block;
+  width:100%;
+  margin:5px;
+  background-color: #fff3e6;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.nav-list{
+  list-style:none;
+  padding-left:0;
+}
+
+.item-title{
+  font-size: 15px;
+}
+#search_link{
+  display: block;
+  background-color: #FFF;
+  padding:15px;
+  border-radius: 1px;
+  border: solid #000;
+  border-width: 1px;
+}
+
+.search-items{
+  font-size: 15px;
+  font-weight:bold;
+  background-color: #FFF;
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 1px;
+  border: solid #000;
+  border-width: 1px;
+}
+
+.spanish-phrases{
+  border: 1px solid black;
+  margin:0px;
+  list-style: none;
+  background: #FFFFFF;
+  color: #000;
+  opacity: 0.95;
+}
+
+.content-block {
+  color: #000;
+  background-color: #FFF;
+  font-color:#000;
+  opacity: 0.96;
+  min-height: 110%;
+}

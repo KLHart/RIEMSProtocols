@@ -1,0 +1,102 @@
+<!-- Top Navbar-->
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="left">
+            <a href="#" class="back link">
+                <i class="icon icon-back"></i>
+                <span>Back</span>
+            </a>
+        </div>
+        <div class="center sliding">Calculator</div>
+        <div class="right">
+            <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+        </div>
+    </div>
+</div>
+<div class="pages">
+    <div data-page="calculator" class="page">
+        <div class="page-content">
+            <div class="content-block">
+                <p> Weight In Pounds: <br>
+                <input id = "weight_input" type = "number"> </p>
+
+                <p> Dosage(mg/kg, mcg/kg, ml/kg): <br>
+                <input id = "dosage_input" type = "number"> </p>
+
+                <button id = "convert_weight"> Convert Weight </button>
+
+                <button id = "dosage"> Get Dosage </button>
+
+                <p> kg: <span id = "weight_output"></span></p>
+                
+                <p> Dosage: <span id = "dosage_output"></span></p>
+
+                <h2>Sample Pediatric Dosages</h2>
+                <h3> Hit the Get Dosage Button above to fill out the table! </h3>
+                <p>These values are based off the US CDC NHANCES data set.</p>
+                <p>Protocols may have maximum values which are not reflected in this table.</p>
+                <p>As always, please refer to your protocols regarding medications, and recheck dosages.</p>
+                <p> This table should be used as a reference tool only.</p>
+                <h2> Based on weight: <span id = "based_on"> </span>Kg</h2>
+                <table>
+                    <tr><th>Medication</th><th>Delivery</th><th>Dose/Kg</th><th>Dose</th></tr>
+                    <tr>
+                        <td class = "protocol-table-item">Adenosine</td><td class = "protocol-table-item">1st Dose IV</td><td class = "protocol-table-item">0.1mg/kg</td><td class = "protocol-table-item"> <span class= "dosage_table_output" data-dosage="0.1" data-max="0"></span> mg</td>
+                    </tr>
+                    <tr>
+                        <td class = "protocol-table-item">Adenosine</td><td class = "protocol-table-item">2nd Dose IV</td><td class = "protocol-table-item">0.2mg/kg</td><td class = "protocol-table-item"> <span class= "dosage_table_output" data-dosage="0.2" data-max="0"></span> mg</td>
+                    </tr>
+                    <tr>
+                        <td class = "protocol-table-item">Amiodarone</td><td class = "protocol-table-item">IV</td><td class = "protocol-table-item">5mg/kg</td><td class = "protocol-table-item"> <span class= "dosage_table_output" data-dosage="5" data-max="0"></span> mg</td>
+                    </tr>
+
+                    <tr>
+                        <td class = "protocol-table-item">Atropine</td><td class = "protocol-table-item">IV</td><td class = "protocol-table-item">0.02mg/kg</td><td class = "protocol-table-item"> <span class= "dosage_table_output" data-dosage="0.02" data-max="0.5"></span> mg</td>
+                    </tr>
+                    <tr>
+                        <td class = "protocol-table-item">Atropine</td><td class = "protocol-table-item">ET</td><td class = "protocol-table-item">0.05mg/kg</td><td class = "protocol-table-item"> <span class= "dosage_table_output" data-dosage="0.05" data-max="0"></span> mg</td>
+                    </tr>
+                    <tr>
+                        <td class = "protocol-table-item">Calcium Chloride</td><td class = "protocol-table-item">IV</td><td class = "protocol-table-item">20mg/kg</td><td class = "protocol-table-item"> <span class= "dosage_table_output" data-dosage="20" data-max="1000"></span> mg</td>
+                    </tr>
+
+                    <tr>
+                        <td class = "protocol-table-item">Diazepam</td><td class = "protocol-table-item">Seizure IV</td><td class = "protocol-table-item">0.2mg/kg</td><td class = "protocol-table-item"> <span class= "dosage_table_output" data-dosage="0.2" data-max="0"></span> mg</td>
+                    </tr>
+                    <tr>
+                        <td class = "protocol-table-item">Dextrose</td><td class = "protocol-table-item">IV</td><td class = "protocol-table-item">0.5g/kg</td><td class = "protocol-table-item"> <span class= "dosage_table_output" data-dosage="0.5" data-max="0"></span> g</td>
+                    </tr>
+                    <tr>
+                        <td class = "protocol-table-item">EPINEPHrine</td><td class = "protocol-table-item">ET</td><td class = "protocol-table-item">0.1mg/kg</td><td class = "protocol-table-item"> <span class= "dosage_table_output" data-dosage="0.1" data-max="2.5"></span> mg</td>
+                    </tr>
+                    <tr>
+                        <td class = "protocol-table-item">EPHINEPHrine</td><td class = "protocol-table-item">IV</td><td class = "protocol-table-item">0.01mg/kg</td><td class = "protocol-table-item"> <span class= "dosage_table_output" data-dosage="0.01" data-max="0"></span> mg</td>
+                    </tr>
+                    <tr>
+                        <td class = "protocol-table-item">Lidocaine</td><td class = "protocol-table-item">IV</td><td class = "protocol-table-item">2-3mg/kg</td><td class = "protocol-table-item"> <span class= "dosage_table_output" data-dosage="2.5" data-max="0"></span> mg</td>
+                    </tr>
+                    <tr>
+                        <td class = "protocol-table-item">Lidocaine</td><td class = "protocol-table-item">ET</td><td class = "protocol-table-item">1mg/kg</td><td class = "protocol-table-item"> <span class= "dosage_table_output" data-dosage="1" data-max="0"></span> mg</td>
+                    </tr>
+                    <tr>
+                        <td class = "protocol-table-item">Magnesium Sulfate</td><td class = "protocol-table-item">IV</td><td class = "protocol-table-item">50 mg/kg</td><td class = "protocol-table-item"> <span class= "dosage_table_output" data-dosage="50" data-max="2000"></span> mg</td>
+                    </tr>
+                    <tr>
+                        <td class = "protocol-table-item">Methyl- PREDNISolone</td><td class = "protocol-table-item">IV</td><td class = "protocol-table-item">2mg/kg</td><td class = "protocol-table-item"> <span class= "dosage_table_output" data-dosage="2" data-max="0"></span> mg</td>
+                    </tr>
+                    <tr>
+                        <td class = "protocol-table-item">Naloxone</td><td class = "protocol-table-item">Full IV/SC/IM</td><td class = "protocol-table-item">0.1mg/kg</td><td class = "protocol-table-item"> <span class= "dosage_table_output" data-dosage="0.1" data-max="2"></span> mg</td>
+                    </tr>
+                    <tr>
+                        <td class = "protocol-table-item">Naloxone</td><td class = "protocol-table-item">Increment IV/SC/IM</td><td class = "protocol-table-item">0.01mg/kg</td><td class = "protocol-table-item"> <span class= "dosage_table_output" data-dosage="0.01" data-max="0"></span> mg</td>
+                    </tr>
+                    <tr>
+                        <td class = "protocol-table-item">Sodium Bicarbonate</td><td class = "protocol-table-item">IV</td><td class = "protocol-table-item">1meq/kg</td><td class = "protocol-table-item"> <span class= "dosage_table_output" data-dosage="1" data-max="0"></span> meq</td>
+                    </tr>
+                </table>
+
+
+            </div>
+        </div>
+    </div>
+</div>
